@@ -8,6 +8,7 @@ def anagrams( s1, s2 ):
     return s1 == s2
 
 def all_anagrams( string ):
+    #for storing sets of anagrams
     agmlist = []
     with open("wordlist.txt", "r") as f:
         # if it an anagram
