@@ -8,16 +8,16 @@ def anagrams( s1, s2 ):
     return s1 == s2
 
 def all_anagrams( string ):
-    anagrams_list = []
-    with open("wordlist.txt", "r") as fileObject:
+    agmlist = []
+    with open("wordlist.txt", "r") as f:
         # if it an anagram
         #append it to anagram list
-        for line in fileObject:
+        for line in f:
             word = line.strip()
             if anagrams(string, word):
-                anagrams_list.append(word)
-    return anagrams_list
-    
+                agmlist.append(word)
+    return agmlist
+
 '''
 checking any particular word anagrams
 
